@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-container {
+  background-image: url("../public//backgroundImage.avif");
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-size: cover; */
+  /* height: 100vh; */
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@layer utilities {
+  .animate-fade-in {
+    animation: fade-in 3s ease-in forwards;
+  }
+}
+
+.slider-container {
+  display: flex;
+  gap: 80px; /* Set gap between slides */
+}
+
+.bgImage {
+  background-image: url("../public//bg1.avif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+@layer utilities {
+  .stroke-text {
+    -webkit-text-stroke: 2px #d4af37; /* Gold-like stroke color */
+    color: transparent; /* Transparent text fill */
+  }
+}
