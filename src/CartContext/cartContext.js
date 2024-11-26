@@ -12,7 +12,7 @@ export const CartProvider = ({ children }) => {
     const fetchProducts = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8000/api/perfume/get-perfume"
+          "https://fragrancebackend-api.vercel.app/api/perfume/get-perfume"
         );
         setPerfumeDetails(response.data);
       } catch (error) {

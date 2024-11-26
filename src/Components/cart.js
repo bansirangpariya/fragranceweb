@@ -5,7 +5,6 @@ import { FaPlus, FaWindowMinimize } from "react-icons/fa";
 const Cart = () => {
   const { cartItems, removeFromCart, updateQuantity, calculateTotal } = useContext(CartContext);
 
-// const { } = useContext(CartContext)
 
   const handleIncrement = (id) => {
     updateQuantity(id, 1);
